@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f3f4"
+    >
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:theme="@style/progressaccent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <requestFocus />
+            <LinearLayout
+                android:id="@+id/manwomen"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/cover"
+                android:padding="16dp"
+                android:visibility="invisible"
+                >
+                <customfonts.MyTextView
+                    android:id="@+id/men"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MEN"
+                    android:textSize="@dimen/text"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colordevider"
+                    ></View>
+
+                <customfonts.MyTextView
+                    android:id="@+id/women"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WOMEN"
+                    android:textSize="@dimen/text"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </LinearLayout>
+
+            <!--***********MEN************-->
+
+            <LinearLayout
+                android:id="@+id/listmen"
+                android:layout_below="@+id/manwomen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+            <!--********WESTERNWEAR************-->
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

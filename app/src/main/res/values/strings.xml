@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Pharmacyonnet</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="code"><u>code</u></string>
+
+    <string name="totalpayable"><b>Total Payable</b></string>
+    <string name="totalpayableamount"><b>940 Rs</b></string>
+    <string name="placeorder">PLACE ORDER</string>
+
+    <string name="paynow">PAY NOW</string>
+
+    <string name="smartbox"><b>Your Smart box on the way!</b></string>
+
+    <string name="description"><i>2.5GHz dual-core Intel Core i5 Tourbo Boost up to 3.1GHz</i></string>
+    <string name="shiping"><i><b>Shipping next week (exited?)</b></i></string>
+
+
+    <string name="next"><b>Next</b></string>
+    <string name="Warranty"><b>Warranty</b></string>
+    <string name="General"><b>General</b></string>
+    <string name="Camera"><b>Camera</b></string>
+    <string name="InTheBox"><b>In The Box</b></string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="box"><b>Your Order is on the way!</b></string>
+
+    <string name="signup"><b><u>Sign up Now</u></b></string>
+
+    <string name="signin"><u><b>Sign in</b></u></string>
+    <string name="tandc"><u>terms &amp; conditions</u></string>
+    <string name="title_activity_sidebar">sidebar</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="api_key">AIzaSyA2YEUt4wM4kVB4JCJYSrPT1KAKnOMJ3sQ</string>
+    <string name="client_id">929586842940-lrj7l9v72tbkegfitmvntboc12lpqat4.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">1006582942857217</string>
+    <string name="fb_login_protocol_scheme">fb1006582942857217</string>
+
+
+</resources>

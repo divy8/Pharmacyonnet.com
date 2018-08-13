@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+  >
+
+  <include
+      android:id="@+id/toolbar"
+      layout="@layout/toolbar"></include>
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+    <!--****NAME TEXT****-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <customfonts.MyTextView
+            android:id="@+id/name1"
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="@color/Tex"
+            android:textSize="@dimen/textsub"/>
+
+        <customfonts.MyTextView
+            android:id="@+id/name2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your first and last name"
+            android:textColor="@color/textSub"
+            android:textSize="@dimen/textsub"
+            />
+    </LinearLayout>
+
+        <!--****Your name TEXT****-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp">
+
+                <customfonts.MyEditText
+                    android:id="@+id/name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:background="#00000000"
+                    android:maxLines="1"
+                    android:textSize="@dimen/textsub"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <customfonts.MyEditText
+                    android:id="@+id/name4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:background="#00000000"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!--****ADDRESS 1****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp">
+
+                <customfonts.MyTextView
+                    android:id="@+id/addL1"
+                    android:layout_weight="5.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address Line 1"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/textsub"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--****ADDRESS LINE 1 FIELD****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <customfonts.MyEditText
+                    android:id="@+id/addL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--****ADDRESS 2****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp">
+
+                <customfonts.MyTextView
+                    android:id="@+id/addL3"
+                    android:layout_weight="5.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address Line 2"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/textsub"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--****ADDRESS LINE 2 FIELD****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <customfonts.MyEditText
+                    android:id="@+id/addL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--****CITY AND STATE****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <customfonts.MyTextView
+                android:id="@+id/city1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/textsub"/>
+
+            <customfonts.MyTextView
+                android:id="@+id/state1"
+                android:layout_weight="1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/textsub" />
+        </LinearLayout>
+
+
+        <!--****CITY AND STATE   TEXT****-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp">
+
+                <customfonts.MyEditText
+                    android:id="@+id/city2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <customfonts.MyEditText
+                    android:id="@+id/state2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!--****ZIP CODE AND COUNTRY****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <customfonts.MyTextView
+                android:id="@+id/zip"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zip Code"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/textsub"/>
+
+            <customfonts.MyTextView
+                android:id="@+id/country"
+                android:layout_weight="1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:textColor="@color/Tex"
+                android:textSize="@dimen/textsub" />
+        </LinearLayout>
+
+
+        <!--****CITY AND STATE   TEXT****-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp">
+
+                <customfonts.MyEditText
+                    android:id="@+id/zip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <customfonts.MyEditText
+                    android:id="@+id/country2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--****Phone number****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp">
+
+                <customfonts.MyTextView
+                    android:id="@+id/phno"
+                    android:layout_weight="5.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/textsub"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--****phone number fild****-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <customfonts.MyEditText
+                    android:id="@+id/phn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:textSize="@dimen/text"
+                    android:background="#00000000"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colordevider" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linear1"
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+
+            >
+
+            <customfonts.MyTextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE &amp; CONTINUE "
+                android:textColor="@color/White"
+                android:textSize="@dimen/text"
+                android:background="@drawable/oneside_roundrect"
+                android:paddingLeft="45dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="45dp"
+                android:gravity="center"
+
+                android:layout_gravity="right"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+          </RelativeLayout>
+    </ScrollView>
+
+
+    <!--************BOTBAR***************-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/botbar"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@drawable/rect"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/home0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/home"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/home"-->
+                <!--android:layout_gravity="center"-->
+
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/offer0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/offer"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/offer"-->
+                <!--android:layout_gravity="center"-->
+
+
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/fav0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/fav"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/fav1"-->
+                <!--android:layout_gravity="center"-->
+
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/bag0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/bag"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/bag_my"-->
+                <!--android:layout_gravity="center"-->
+
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/profile0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/profile"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/user"-->
+                <!--android:layout_gravity="center"-->
+
+
+                <!--/>-->
+
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+</RelativeLayout>

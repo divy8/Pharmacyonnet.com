@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/rect"
+        android:orientation="vertical">
+
+        <customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks for order!"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/Tex"/>
+        <View
+
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dash_line"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/macbook"/>
+
+        <View
+
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dash_line"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="05dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="05dp"
+                android:paddingTop="10dp">
+
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1x"
+                    android:textSize="20dp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/textSub"/>
+
+                <customfonts.MyTextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iPad Air 2 (Space Grey, 64GB, WiFi + Cellular)"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/textSub"/>
+
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="46,500 RS"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_gravity="left"
+                    android:textColor="@color/textSub"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+
+
+                <customfonts.MyTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="3GB DDR3 RAM + 16 GB ROM"
+                    android:textSize="10dp"
+                    android:textColor="@color/textSub"
+                    android:textStyle="italic"
+                    android:layout_gravity="left" />
+
+                <customfonts.MyTextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shiping"
+                    android:textSize="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textSub"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="left" />
+
+
+
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="250dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/dash_line"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="05dp"
+                android:paddingTop="10dp"
+
+                android:orientation="horizontal">
+
+                <customfonts.MyTextView
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TOTAL"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/textSub"
+                    android:gravity="center"/>
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="46,500 RS"
+
+                    android:gravity="right"
+                    android:textSize="25dp"
+                    android:textColor="@color/red"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/line"
+        android:layout_alignRight="@+id/lin1"
+        android:layout_alignEnd="@+id/lin1"
+        android:layout_alignLeft="@+id/lin1"
+        android:layout_alignStart="@+id/lin1"
+        android:layout_below="@+id/lin1" />
+
+
+</RelativeLayout>

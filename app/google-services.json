@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "929586842940",
+    "firebase_url": "https://pharmacyonnet-bf9ad.firebaseio.com",
+    "project_id": "pharmacyonnet-bf9ad",
+    "storage_bucket": "pharmacyonnet-bf9ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929586842940:android:87f5107d976748f8",
+        "android_client_info": {
+          "package_name": "com.pharmacy.pharmacyonnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929586842940-lrj7l9v72tbkegfitmvntboc12lpqat4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCViGDFWr3URGGVnoMzbLSnNkhc4ePGrKs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

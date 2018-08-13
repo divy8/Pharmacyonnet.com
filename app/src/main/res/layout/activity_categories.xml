@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4"
+ >
+
+
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar"
+            ></include>
+
+
+        <!--********SEARCH*********-->
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3d4652"
+            android:paddingBottom="16dp"
+            android:paddingTop="10dp"
+            >
+
+            <customfonts.MyEditText
+                android:id="@+id/searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Find From Categoreis"
+                android:background="@drawable/searchbg"
+                android:textSize="@dimen/text"
+                android:textColorHint="@color/textSub"
+                android:drawableLeft="@drawable/search"
+                android:padding="10dp"
+                android:drawablePadding="6dp"
+                android:lines="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+        </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="21dp"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/beauty0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/beauty1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/beauty"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/beauty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beauty"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </LinearLayout>
+
+
+                   <View
+
+                     android:layout_width="1dp"
+                     android:layout_height="match_parent"
+                     android:background="@color/colordevider">
+
+                   </View>
+
+
+            <LinearLayout
+                android:id="@+id/cloths0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/cloths1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/cloths"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/cloths2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloths"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+            </LinearLayout>
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colordevider">
+
+        </View>
+
+            <LinearLayout
+                android:id="@+id/appliances0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/appliances1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/appliances"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/appliances2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appliances"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colordevider">
+
+        </View>
+
+            <LinearLayout
+                android:id="@+id/baby0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/baby1"
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baby"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+
+                    android:id="@+id/baby2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baby"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </LinearLayout>
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colordevider">
+
+        </View>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/books0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/books1"-->
+
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:src="@drawable/books"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="6dp"-->
+
+                <!--/>-->
+
+            <!--<customfonts.MyTextView-->
+
+                <!--android:id="@+id/books2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Books"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="@dimen/text"-->
+                <!--android:textColor="@color/Tex"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--/>-->
+
+
+
+        <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_below="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="21dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/car0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/car1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/car"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/car2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+
+            <LinearLayout
+                android:id="@+id/bike0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/bike1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bikes"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/bike2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bikes"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/comp0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/comp1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/computers"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/comp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computers"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/electr0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/electr1"
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/electronics"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+
+                    android:id="@+id/elctr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/fur0"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/fur1"-->
+
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:src="@drawable/furniture"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="6dp"-->
+
+                    <!--/>-->
+
+                <!--<customfonts.MyTextView-->
+
+                    <!--android:id="@+id/fur2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Furniture"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textSize="@dimen/text"-->
+                    <!--android:textColor="@color/Tex"-->
+                    <!--android:layout_marginBottom="6dp"-->
+                    <!--android:layout_marginTop="6dp"-->
+                    <!--/>-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_below="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="21dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/kitchen0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/kitchen1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/kitchen"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/kitchen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kitchen"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+
+            <LinearLayout
+                android:id="@+id/scientific0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/scientific1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/scientific"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/scientific2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scientific"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+            </LinearLayout>
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/jewellery0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/jewellery1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/jewellery"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/jewellery2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jewellery"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+            <LinearLayout
+                android:id="@+id/luggage0"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/luggage1"
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/luggage"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <customfonts.MyTextView
+
+                    android:id="@+id/luggage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luggage"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/Tex"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colordevider">
+
+            </View>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/shoes0"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/shoes1"-->
+
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:src="@drawable/shoes"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="6dp"-->
+
+                    <!--/>-->
+
+                <!--<customfonts.MyTextView-->
+
+                    <!--android:id="@+id/shoes2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Shoes"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textSize="@dimen/text"-->
+                    <!--android:textColor="@color/Tex"-->
+                    <!--android:layout_marginBottom="6dp"-->
+                    <!--android:layout_marginTop="6dp"-->
+                    <!--/>-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <include layout="@layout/activity_bottombar"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

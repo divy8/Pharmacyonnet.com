@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    >
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <home.StickyScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+
+
+            <!--********SEARCH*********-->
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="#07617D"
+                android:paddingBottom="16dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginLeft="-5dp"
+                android:tag="sticky">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:elevation="5dp"
+                    android:tag="sticky"
+                    custom:cardCornerRadius="4dp"
+
+                    >
+
+                    <customfonts.MyEditText
+                        android:id="@+id/searchtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/searchbghome"
+                        android:drawableLeft="@drawable/search"
+                        android:drawablePadding="6dp"
+                        android:elevation="5dp"
+                        android:hint="Find Beast Deal"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:tag="sticky"
+                        android:textColorHint="@color/textSub"
+                        android:textSize="@dimen/text" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <!--********SLIDER**********-->
+
+
+            <ss.com.bannerslider.Slider
+                android:id="@+id/banner_slider1"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@+id/search"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:background="#fff"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="#E9FFFF">
+            </ss.com.bannerslider.Slider>
+
+
+            <!--*********CATEGORIES***********-->
+
+            <LinearLayout
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banner_slider1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/healths"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/health1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/health" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/shirt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:letterSpacing="0.07"
+                        android:text="Healthcare"
+                        android:textColor="@color/Tex"
+                        android:textSize="10dp">
+
+
+                    </customfonts.MyTextView>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colordevider" />
+
+
+                <LinearLayout
+                    android:id="@+id/Wellness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/wellness1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/wellness"
+
+                        />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/jeans1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:letterSpacing="0.07"
+                        android:text="Wellness"
+                        android:textColor="@color/Tex"
+                        android:textSize="10dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colordevider" />
+
+
+                <LinearLayout
+                    android:id="@+id/personalcare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/personalcare1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/personal"
+
+                        />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/shoes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:letterSpacing="0.07"
+                        android:text="Personal Care"
+                        android:textColor="@color/Tex"
+                        android:textSize="10dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colordevider" />
+
+
+                <LinearLayout
+                    android:id="@+id/motherbaby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/motherbaby1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/mother"
+                        />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/slippers1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:letterSpacing="0.07"
+                        android:text="Mother &amp; Baby"
+                        android:textColor="@color/Tex"
+                        android:textSize="10dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/colordevider" />
+
+                <LinearLayout
+                    android:id="@+id/household"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/household1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/household"
+
+                        />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/goggles1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:letterSpacing="0.07"
+                        android:text="Household"
+                        android:textColor="@color/Tex"
+                        android:textSize="10dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--**********HORIZONTAL SCROLLVIEW  1  **********-->
+
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categories"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/b1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E1F0B6 "
+                    android:minHeight="150dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/Collection1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/banner"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <customfonts.MyTextView
+                    android:id="@+id/Collection_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Collection name 1"
+                    android:textColor="@color/Tex"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="22dp"
+                    android:src="@drawable/viewmore" />
+
+
+                <home.ExpandableHeightGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Collection_name1"
+                    android:layout_margin="2dp"
+                    android:background="#f2f3f4"
+                    android:horizontalSpacing="5dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Collection1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/b2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E9FFFF "
+                    android:minHeight="150dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/collection2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/banner1"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                >
+
+                <customfonts.MyTextView
+                    android:id="@+id/Collection_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Collection name 1"
+                    android:textColor="@color/Tex"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="22dp"
+                    android:src="@drawable/viewmore" />
+
+
+                <home.ExpandableHeightGridView
+                    android:id="@+id/gridview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Collection_name2"
+                    android:layout_margin="2dp"
+                    android:background="#f2f3f4"
+                    android:horizontalSpacing="-30dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="8dp"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/banner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/collection2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/b3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E1F0B6 "
+                    android:minHeight="150dp" />
+
+            </LinearLayout>
+
+
+            <customfonts.MyTextView
+                android:id="@+id/groomingproducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/banner3"
+                android:layout_marginTop="5dp"
+                android:text="Grooming Products"
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+            <!--********RECYCLERVIEW 1************-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/groomingproducts"
+                android:elevation="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/banner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#fff"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="25dp">
+
+                <ImageView
+                    android:id="@+id/b4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E1F0B6 "
+                    android:minHeight="150dp" />
+
+            </LinearLayout>
+
+
+
+            <customfonts.MyTextView
+                android:id="@+id/trendingproducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banner2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:text="Trending Products"
+                android:textColor="@color/Tex"
+                android:textSize="16dp" />
+
+            <!--********RECYCLERVIEW 2************-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trendingproducts"
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/b6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#E9FFFF "
+                android:minHeight="150dp" />
+
+            <ImageView
+                android:id="@+id/b7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b6"
+                android:layout_marginBottom="56dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#E1F0B6 "
+                android:minHeight="150dp" />
+
+        </RelativeLayout>
+
+
+    </home.StickyScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <!--*****BOTBAR***************-->
+
+    <LinearLayout
+        android:id="@+id/botbar"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bot_bar_bg"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/home0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/homewhite"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/offer0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/offer"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/salewhite"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fav0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heartwhite"
+                android:layout_gravity="center"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/bag0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <customfonts.MyTextView
+                    android:visibility="visible"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bagnumberbg"
+                    android:text="2"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="3dp"
+                    />
+                <ImageView
+                    android:id="@+id/bag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bagwhite2"
+                    android:layout_gravity="center"
+
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noti0"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/noti"
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/noti"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+   >
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar">
+
+    </include>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:theme="@style/progressaccent"
+        />
+
+
+
+    <!--********story by and refine*********-->
+
+    <!--********story by and refine*********-->
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbarbg"
+        android:paddingBottom="16dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STORY BY"
+            android:drawableLeft="@drawable/arrowupdown"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/Tex"
+
+            />
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:background="@color/colordevider"></View>
+        <customfonts.MyTextView
+            android:id="@+id/refine"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFINE"
+            android:drawableLeft="@drawable/refine"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/Tex"
+            />
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colordevider"></View>
+
+        <ImageView
+            android:id="@+id/gridviewicon"
+            android:visibility="visible"
+            android:layout_marginRight="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gridviewicon"/>
+        <ImageView
+            android:id="@+id/listviewicon"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/listviewicon"/>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="103dp"
+        android:scrollbars="none"
+        >
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/productlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <productdetails.ExpandableHeightGridView
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:verticalSpacing="5dp"
+                android:stretchMode="columnWidth"
+                android:numColumns="2"
+                android:layout_margin="5dp"
+                android:isScrollContainer="false"
+                android:horizontalSpacing="10dp"
+                android:id="@+id/gridview"
+                android:background="#f2f3f4" />
+
+
+            <productdetails.ExpandableHeightListView
+                android:visibility="visible"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f3f4"/>
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/listview"
+                android:layout_centerInParent="true">
+
+            <customfonts.MyTextView
+                android:id="@+id/viewMore"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rect"
+                android:paddingBottom="6dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:backgroundTint="@color/yellow"
+                android:paddingTop="10dp"
+                android:text="View More"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="@dimen/viewmore"
+                android:visibility="invisible" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <customfonts.MyTextView
+            android:id="@+id/notext"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/Tex"
+            android:visibility="invisible"
+            />
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="21dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colordevider"></View>
+    </LinearLayout>
+
+
+</RelativeLayout>

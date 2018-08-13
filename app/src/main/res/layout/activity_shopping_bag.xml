@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f2f3f4">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <!--**********Apply coupon and gift wrap**********-->
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rect"
+       android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="73dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="9dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/coupontag"
+
+                />
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apply Coupon"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colordevider"></View>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="9dp"
+            android:layout_gravity="bottom"
+           >
+
+            <customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="150 Rs"
+                android:textColor="@color/textSub"
+                android:textSize="11dp"
+                android:layout_gravity="right"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/giftbox"
+
+                />
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gift Wrap"
+                android:textColor="@color/red"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/text"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rect"
+        android:layout_margin="16dp"
+        >
+
+      <!--******bag_my total********-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/bagtotal"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/textSub"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/total"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1600 Rs"
+            android:textColor="@color/Tex"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider"/>
+
+
+        <!--******bag_my total********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/bagdiscount"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:textColor="@color/textSub"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                />
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/discount"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 %"
+                android:textColor="@color/Tex"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+        <!--******sub total********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/subtotal"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textColor="@color/textSub"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                />
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/stotal"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1440 Rs"
+                android:textColor="@color/Tex"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+
+        <!--******coupon discount********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/coupondiscount"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coupon Discount"
+                android:textColor="@color/red"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                />
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/cdiscount"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- 500 Rs"
+                android:textColor="@color/red"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+        <!--******sub total********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/delivery"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shipping"
+                android:textColor="@color/textSub"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                />
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/deliveryfree"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free"
+                android:textColor="@color/green"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+        <!--****** total********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/totalpayable"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/totalpayable"
+                android:textColor="@color/textSub"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                />
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/payable"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/totalpayableamount"
+                android:textColor="@color/Tex"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="right"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/linear2"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <customfonts.MyTextView
+            android:id="@+id/placeOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeorder"
+            android:textColor="@color/White"
+            android:textSize="@dimen/text"
+            android:background="@drawable/oneside_roundrect"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="25dp"
+            android:gravity="center"
+
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+  <!--************BOTBAR***************-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/botbar"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@drawable/rect"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/home0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/home"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/home"-->
+            <!--android:layout_gravity="center"-->
+
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/offer0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/offer"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/offer"-->
+            <!--android:layout_gravity="center"-->
+
+
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/fav0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/fav"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/fav"-->
+            <!--android:layout_gravity="center"-->
+
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/bag0"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--&gt;-->
+            <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:visibility="visible"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="20dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="20dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="@drawable/bagnumberbg"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="2"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/White"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="right"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="6dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginBottom="20dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginTop="3dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/bag"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@drawable/bag_my"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+
+
+
+
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/profile0"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/profile"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:src="@drawable/user"-->
+            <!--android:layout_gravity="center"-->
+
+
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+</RelativeLayout>

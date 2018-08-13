@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    >
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider"></View>
+
+    <LinearLayout
+
+        android:layout_below="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/categoriesbg1"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+            <customfonts.MyTextView
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CATEGORIES"
+               android:textColor="@color/Tex"
+                android:padding="16dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"></View>
+
+
+
+
+
+            <customfonts.MyTextView
+
+                android:id="@+id/brands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BRANDS"
+                android:textColor="@color/Tex"
+                android:padding="16dp"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"></View>
+
+
+            <customfonts.MyTextView
+                android:id="@+id/colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COLOURS"
+                android:textColor="@color/Tex"
+                android:padding="16dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"></View>
+
+
+            <customfonts.MyTextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRICE"
+                android:textColor="@color/Tex"
+                android:padding="16dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"></View>
+
+
+            <customfonts.MyTextView
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DISCOUNT"
+                android:textColor="@color/Tex"
+                android:padding="16dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"></View>
+
+          </LinearLayout>
+
+            <customfonts.MyTextView
+                android:id="@+id/clearall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLEAR ALL"
+                android:textColor="@color/White"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red"
+                android:gravity="center"
+
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fffdfe"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bglist"
+                >
+
+
+                <!--***************LISTVIEW BRAND*****************-->
+                <LinearLayout
+                    android:id="@+id/brandlist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/bglist">
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+
+                >
+
+                <customfonts.MyEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search..."
+                    android:background="@drawable/searchbg"
+                    android:textSize="@dimen/text"
+                    android:textColorHint="@color/textSub"
+                    android:drawableLeft="@drawable/search"
+                    android:padding="8dp"
+                    android:drawablePadding="6dp"
+                    android:lines="1"
+                    /></LinearLayout>
+
+
+                    <ListView
+
+                    android:layout_below="@+id/search"
+                    android:layout_marginBottom="45dp"
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#00000000"
+                    android:background="@color/bglist"
+                    android:scrollbars="none"
+                    />
+
+
+            </LinearLayout>
+                <!--***************RANGEBAR*****************-->
+           <LinearLayout
+               android:id="@+id/pricelist"
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+
+               <shoppyFilter.RangeBar
+                   android:layout_marginTop="26dp"
+                   xmlns:custom="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/rangebar1"
+                   android:layout_width="match_parent"
+                   android:layout_height="72dp"
+                   custom:tickStart="0"
+                   custom:tickInterval="1"
+                   custom:tickEnd="1000"
+                   custom:pinMaxFont="10sp"
+                   android:layout_marginLeft="16dp"
+                   android:layout_marginRight="16dp"/>
+
+
+
+               <LinearLayout
+                    android:id="@+id/pbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:layout_below="@+id/rangebar1"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/rang1"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:layout_marginRight="10dp"
+                        android:text="$ 0"
+                        android:background="#fcfcfc"
+                        android:textColor="@color/Tex"/>
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/rang2"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:text="$ 1000"
+                        android:layout_marginLeft="10dp"
+                        android:background="#fcfcfc"
+                        android:textColor="@color/Tex"/>
+
+
+
+
+                </LinearLayout>
+           </LinearLayout>
+
+
+                <!--*********COLOURS**********-->
+                 <LinearLayout
+                     android:visibility="gone"
+                     android:id="@+id/colourlist"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     >
+                <shoppyFilter.ExpandableHeightGridView
+                    android:id="@+id/gridview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:verticalSpacing="16dp"
+                    android:horizontalSpacing="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:stretchMode="columnWidth"
+                    android:numColumns="3"
+                    android:isScrollContainer="false"
+                    android:background="#00000000"
+                    />
+                 </LinearLayout>
+
+
+                <!--*********DISCOUNT***********-->
+
+                <LinearLayout
+                    android:id="@+id/discountlist"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ListView
+
+                        android:layout_marginTop="45dp"
+                        android:id="@+id/discountview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="#00000000"
+                        android:background="@color/bglist"
+                        android:scrollbars="none"
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APPLY"
+                android:textColor="@color/White"
+                android:padding="16dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/green"
+                android:gravity="center"
+                />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

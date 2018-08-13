@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f3f4"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/strok"
+        android:id="@+id/div1"
+        ></View>
+
+   <!--*******Warranty*********-->
+    <LinearLayout
+        android:id="@+id/warrantycard"
+        android:layout_below="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/White"
+        >
+    <customfonts.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features-"
+        android:textSize="18dp"
+        android:textColor="@color/Tex"
+        />
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+    <!--<customfonts.MyTextView-->
+         <!--android:layout_weight="1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Warranty Period"-->
+        <!--android:textSize="@dimen/textsub"-->
+        <!--android:textColor="@color/textSub"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--/>-->
+
+            <!--<customfonts.MyTextView-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="12 Months Manufacturer Warranty"-->
+                <!--android:textSize="@dimen/text"-->
+                <!--android:textColor="@color/Tex"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/warrantycard"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/strok"
+        android:id="@+id/div2"
+        ></View>
+
+
+    <View
+        android:layout_below="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/strok"
+        android:id="@+id/div3"
+        android:layout_marginTop="7dp"
+        ></View>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

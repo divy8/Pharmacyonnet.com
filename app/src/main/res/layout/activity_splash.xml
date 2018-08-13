@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/pharmacylogo"
+
+    >
+
+    <!--<wolfsoft.com.splash.KenBurnsView-->
+        <!--android:id="@+id/ken_burns_images"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+  <!--  <ImageView
+        android:id="@+id/imagelogo2"
+        android:layout_width="243dp"
+        android:layout_height="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:src="@drawable/pharmacy_logo" />-->
+
+
+    <customfonts.MySplashTextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.0"
+        android:text="sehat aapke ghar tak"
+        android:textSize="20dp"
+        android:textColor="@color/colortext"
+        android:layout_marginBottom="155dp"/>
+
+    <!--style="@style/TextViewAppearance.Headline2"-->
+
+</RelativeLayout>

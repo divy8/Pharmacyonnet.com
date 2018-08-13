@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        ></include>
+
+
+    <!--********SLIDER**********-->
+            <healthcare.CustomTabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:tabIndicatorColor="#F9AA2B"
+                app:tabIndicatorHeight="3.9dp"
+                android:background="@color/White"
+                android:layout_marginTop="56.2dp"
+                app:tabTextColor="@color/Tex"
+                android:elevation="3dp"
+                app:tabMode="scrollable"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <android.support.v4.view.ViewPager
+                android:layout_below="@+id/tab_layout"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v4.view.ViewPager>
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+
+        <!--<include layout="@layout/activity_bottombar"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+
+
+</RelativeLayout>
